@@ -1,0 +1,492 @@
+TOTAL: 67 ZONES
+
+
+tier 10: 90-99
+tier 10-11: 95-105
+tier 11: 100-109
+tier 12: 110-119
+tier 13: 120-125
+tier 14: 130-139
+
+zone_name: "Darklight Wood"
+zone_level: 1-20
+zone_tier: 1, 2
+world_bell_access: N
+ulteran_spire_acces: N
+druid_ring_access: Y
+
+zone_name: "Greater Faydark"
+zone_level: 1-20
+zone_tier: 1, 2
+world_bell_access: Y
+ulteran_spire_access: Y
+druid_ring_access: Y
+
+zone_name: "Timorous Deep"
+zone_level: 1-20
+zone_tier: 1, 2
+world_bell_access: Y
+ulteran_spire_access: N
+druid_ring_access: N
+
+zone_name: "Frostfang Sea"
+zone_level: 1-20
+zone_tier: 1, 2
+world_bell_access: Y
+ulteran_spire_access: N
+druid_ring_access: N
+
+zone_name: "Qeynos Districts"
+zone_level: 1-10
+zone_tier: 1
+world_bell_access: Y
+ulteran_spire_access: N
+druid_ring_access: N
+
+zone_name: "Freeport Districts"
+zone_level: 1-10
+zone_tier: 1
+world_bell_access: Y
+ulteran_spire_access: N
+druid_ring_access: N
+
+zone_name: "Antonica"
+zone_level: 10-20
+zone_tier: 2
+world_bell_access: Y
+ulteran_spire_access: Y
+druid_ring_access: Y
+
+zone_name: "The Commonlands"
+zone_level: 10-20
+zone_tier: 2
+world_bell_access: Y
+ulteran_spire_access: Y
+druid_ring_access: Y
+
+zone_name: "Nektulos Forest"
+zone_level: 20-30
+zone_tier: 3
+world_bell_access: Y
+ulteran_spire_access: Y
+druid_ring_access: Y
+
+zone_name: "Thundering Steppes"
+zone_level: 20-30
+zone_tier: 3
+world_bell_access: Y
+ulteran_spire_access: Y
+druid_ring_access: N
+
+zone_name: "Butcherblock Mountains"
+zone_level: 20-35
+zone_tier: 3
+world_bell_access: Y
+ulteran_spire_access: N
+druid_ring_access: Y
+
+zone_name: "Enchanted Lands"
+zone_level: 30-40
+zone_tier: 4
+world_bell_access: Y
+ulteran_spire_access: Y
+druid_ring_access: Y
+
+zone_name: "Zek, the Orcish Wastes"
+zone_level: 30-40
+zone_tier: 4
+world_bell_access: Y
+ulteran_spire_access: Y
+druid_ring_access: Y
+
+zone_name: "Steamfont"
+zone_level: 35-50
+zone_tier: 4
+world_bell_access: N
+ulteran_spire_access: N
+druid_ring_access: Y
+
+zone_name: "Feerrott"
+zone_level: 35-45
+zone_tier: 5
+world_bell_access: Y
+ulteran_spire_access: Y
+druid_ring_access: Y
+
+zone_name: "Rivervale"
+zone_level: 35-45
+zone_tier: 5
+world_bell_access: N
+ulteran_spire_access: N
+druid_ring_access: N
+
+zone_name: "Everfrost"
+zone_level: 40-50
+zone_tier: 5
+world_bell_access: Y
+ulteran_spire_access: Y
+druid_ring_access: N
+
+zone_name: "Lavastorm"
+zone_level: 40-50
+zone_tier: 5
+world_bell_access: Y
+ulteran_spire_access: N
+druid_ring_access: N
+
+zone_name: "The Sinking Sands"
+zone_level: 50-60
+zone_tier: 6
+world_bell_access: Y
+ulteran_spire_access: N
+druid_ring_access: Y
+
+zone_name: "The Lesser Faydark"
+zone_level: 50-60
+zone_tier: 6
+world_bell_access: N
+ulteran_spire_access: N
+druid_ring_access: N
+
+zone_name: "The Village of Shin"
+zone_level: 55-65
+zone_tier: n/a
+world_bell_access: Y
+ulteran_spire_access: N
+druid_ring_access: N
+-- should it be on here?
+
+zone_name: The Mystic Lake [Isle of Mara]
+zone_level: 55-65
+zone_tier: n/a
+world_bell_access: N
+ulteran_spire_access: N
+druid_ring_access: N
+-- should it be on here?
+
+zone_name: The Pillars of Flame
+zone_level: 50-60
+zone_tier: 6
+world_bell_access: N
+ulteran_spire_access: N
+druid_ring_access: N
+
+zone_name: Tenebrous Tangle
+zone_level: 55-60
+zone_tier: 7
+world_bell_access: N
+ulteran_spire_access: Y
+druid_ring_access: N
+
+zone_name: The Barren Sky
+zone_level: 60-65
+zone_tier: 7
+world_bell_access: N
+ulteran_spire_access: Y
+druid_ring_access: N
+
+zone_name: The Bonemire
+zone_level: 65-70
+zone_tier: 7
+world_bell_access: N
+ulteran_spire_access: Y
+druid_ring_access: N
+
+zone_name: Loping Plains
+zone_level: 60-70
+zone_tier: 7
+world_bell_access: N
+ulteran_spire_access: Y
+druid_ring_access: Y
+
+zone_name: Kylong Plains
+zone_level: 65-70
+zone_tier: 8
+world_bell_access: Y
+ulteran_spire_access: Ya www
+druid_ring_access: Y
+
+zone_name: Fens of Nathsar
+zone_level: 70-75
+zone_tier: 8
+world_bell_access: Y
+ulteran_spire_access: N
+druid_ring_access: N
+
+zone_name: Kunzar Jungle
+zone_level: 70-75
+zone_tier: 8
+world_bell_access: N
+ulteran_spire_access: N
+druid_ring_access: Y
+
+zone_name: Jarsath Wastes
+zone_level: 77-88
+zone_tier: 8
+world_bell_access: Y
+ulteran_spire_access: N
+druid_ring_access: Y
+
+zone_name: Moors of Ykesha
+zone_level: 75-80
+zone_tier: 8
+world_bell_access: Y
+ulteran_spire_access: Y
+druid_ring_access: Y
+
+zone_name: Sundered Frontier
+zone_level: 80-90
+zone_tier: 9
+world_bell_access: N
+ulteran_spire_access: Y
+druid_ring_access: Y
+
+zone_name: Stonebrunt Highlands
+zone_level: 85-90
+zone_tier: 9
+world_bell_access: N
+ulteran_spire_access: Y
+druid_ring_access: Y
+
+zone_name: Great Divide
+zone_level: 85-90
+zone_tier: 9
+world_bell_access: Y
+ulteran_spire_access: N
+druid_ring_access: Y
+
+zone_name: Eastern Wastes
+zone_level: 87-93
+zone_tier: n/a
+world_bell_access: N
+ulteran_spire_access: Y
+druid_ring_access: N
+
+zone_name: The Withered Lands
+zone_level: 90-92
+zone_tier: 10
+world_bell_access: N
+ulteran_spire_access: N
+druid_ring_access: N
+
+zone_name: The Eidolon Jungle
+zone_level: 92-95
+zone_tier: 10
+world_bell_access: N
+ulteran_spire_access: N
+druid_ring_access: N
+
+zone_name: Obol Plains
+zone_level: 94-95
+zone_tier: 10
+world_bell_access: N
+ulteran_spire_access: Y
+druid_ring_access: Y
+note-- only non-guild spires
+
+zone_name: Cobalt Scar
+zone_level: 95-100
+bzone_tier: 10
+world_bell_access: N
+ulteran_spire_access: Y
+druid_ring_access: N
+note-- only non-guild spires
+
+zone_name: Vesspyr Isles
+zone_level: 100-101
+zone_tier: 10
+world_bell_access: N
+ulteran_spire_access: Y
+druid_ring_access: Y
+note-- only non-gulid spires
+
+zone_name: Tranquil Sea
+zone_level: 95-100
+zone_tier: 10-11
+world_bell_access: Y
+ulteran_spire_access: N
+druid_ring_access: N
+
+zone_name: Phantom Sea
+zone_level: 95-100
+zone_tier: 10-11
+world_bell_access: N
+ulteran_spire_access: N
+druid_ring_access: N
+
+zone_name: Thalumbra, The Ever Deep
+zone_level: 100-103
+zone_tier: 11
+world_bell_access: N
+ulteran_spire_access: N
+druid_ring_access: N
+
+***zone_name: Zek, the Scourge Wastes
+zone_level: 100-110
+zone_tier: ?
+world_bell_access: N
+ulteran_spire_access: Y
+druid_ring_access: N
+--note: can't enter w/o being under level 100
+
+***bazone_name: Obulus Frontier
+zone_level: 102-106
+zone_tier: ?
+world_bell_access: N
+ulteran_spire_access: N
+druid_ring_access: N
+--note: can't enter w/o completing access quest (journal level 104)
+
+zone_name: Plane of Magic
+zone_level: 100-110
+zone_tier: 12
+world_bell_access: N
+ulteran_spire_access: Y
+druid_ring_access: N
+
+zone_name: Eryslai, the Kingdom of the Wind
+zone_level: 110
+zone_tier: 12
+world_bell_access: N
+ulteran_spire_access: N
+druid_ring_access: N
+
+zone_name: Detroxxulous, the Plaguelands
+zone_level: 110
+zone_tier: 12
+world_bell_access: N
+ulteran_spire_access: N
+druid_ring_access: N
+
+zone_name: Doomfire, the Burning Lands
+zone_level: 110
+zone_tier: 12
+world_bell_access: N
+ulteran_spire_access: N
+druid_ring_access: N
+
+zone_name: Vegarlson, the Earthen Badlands
+zone_level: 110
+zone_tier: 12
+world_bell_access: N
+ulteran_spire_access: N
+druid_ring_access: N
+
+zone_name: The Blinding
+zone_level: 110-120
+zone_tier: 12
+world_bell_access: N
+ulteran_spire_access: Y
+druid_ring_access: N
+
+zone_name: Aurelian Coast
+zone_level: 115-120
+zone_tier: 12
+world_bell_access: N
+ulteran_spire_access: N
+druid_ring_access: N
+
+zone_name: Wracklands
+zone_level: 120
+zone_tier: 12
+world_bell_access: N
+ulteran_spire_access: N
+druid_ring_access: N
+
+zone_name: Echo Caverns
+zone_level: 120
+zone_tier: 12
+world_bell_access: N
+ulteran_spire_access: N
+druid_ring_access: N
+
+zone_name: Savage Weald
+zone_level: 120
+zone_tier: 12
+world_bell_access: N
+ulteran_spire_access: N
+druid_ring_access: N
+
+zone_name: Shadeweaver's Thicket
+zone_level: 120
+zone_tier: 12
+world_bell_access: N
+ulteran_spire_access: N
+druid_ring_access: N
+
+zone_name: Svarni Expanse
+zone_level: 120-125
+zone_tier: ?
+world_bell_access: Y
+ulteran_spire_access: N
+druid_ring_access: N
+
+zone_name: Karuupa Jungle
+zone_level: 120-125
+zone_tier: ?
+world_bell_access: N
+ulteran_spire_access: N
+druid_ring_access: N
+
+zone_name: Mahngavi Wastes
+zone_level: 120-125
+zone_tier: ?
+world_bell_access: N
+ulteran_spire_access: N
+druid_ring_access: N
+
+zone_name: Forlorn Gist
+zone_level: 120-125
+zone_tier: ?
+world_bell_access: N
+ulteran_spire_access: N
+druid_ring_access: N
+
+zone_name: Raj'Dur Plateaus
+zone_level: 125-135
+zone_tier: ?
+world_bell_access: N
+ulteran_spire_access: N
+druid_ring_access: N
+
+zone_name: Takish Badlands
+zone_level: 125-135
+zone_tier: ?
+world_bell_access: N
+ulteran_spire_access: N
+druid_ring_access: Y
+
+zone_name: Sandstone Delta
+zone_level: 125-135
+zone_tier: ?
+world_bell_access: N
+ulteran_spire_access: N
+druid_ring_access: N
+
+zone_name: Splendor Sky Aerie
+zone_level: 125-130
+zone_tier: ?
+world_bell_access: N
+ulteran_spire_access: Y
+druid_ring_access: N
+
+zone_name: Zimara Breadth
+zone_level: 125-130
+zone_tier: ?
+world_bell_access: N
+ulteran_spire_access: N
+druid_ring_access: N
+
+zone_name: Aether Wroughtlands
+zone_level: 125-130
+zone_tier: ?
+world_bell_access: N
+ulteran_spire_access: N
+druid_ring_access: N
+
+zone_name: Western Wastes
+zone_level: 130
+zone_tier: ?
+world_bell_access: Y
+ulteran_spire_access: N
+druid_ring_access: N

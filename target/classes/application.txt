@@ -1,0 +1,16 @@
+spring:
+   datasource:
+      username: guild_manager
+      password: guild_manager
+      url: jdbc:mysql://localhost:3306/guild_manager
+    
+    
+   jpa:
+      hibernate:
+         ddl-auto: create
+      show-sql: true
+      defer-datasource-initialization: true
+    
+   sql:
+      init:
+         mode: always
