@@ -21,6 +21,10 @@ public class ItemData {
 	private Integer itemLevel;
 	private String itemDescription;
 	private String itemNotes;
+	
+	private String guildName;
+	private String depotName;
+	
 	private LocalDateTime lastUpdated;
 
 	private Set<String> tags = new HashSet<>();
@@ -35,6 +39,9 @@ public class ItemData {
 		itemDescription = item.getItemDescription();
 		itemNotes = item.getItemNotes();
 		lastUpdated = item.getLastUpdated();
+		
+		depotName = item.getDepot().getDepotName();
+		guildName = item.getDepot().getGuild().getGuildName();
 
 		for (Tag tag : item.getTags()) {
 			tags.add(tag.toString());
@@ -49,8 +56,7 @@ public class ItemData {
 		}
 	}
 	
-	public Item toItem() {
-		Item item = new Item();
+	public Item toItem(Item item) {
 		item.setItemAmount(itemAmount);
 		item.setItemDescription(itemDescription);
 		item.setItemId(itemId);

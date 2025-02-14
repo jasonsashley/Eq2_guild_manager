@@ -1,3 +1,4 @@
+/*
 package guild.manager.controller;
 
 import java.util.List;
@@ -17,7 +18,9 @@ import org.springframework.web.bind.annotation.RestController;
 
 import guild.manager.controller.model.DepotData;
 import guild.manager.controller.model.GuildData;
+import guild.manager.controller.model.ItemData;
 import guild.manager.service.GuildService;
+import guild.manager.service.ItemService;
 import lombok.extern.slf4j.Slf4j;
 
 @RestController
@@ -27,6 +30,9 @@ public class GuildController {
 
 	@Autowired
 	GuildService guildService;
+	
+	@Autowired
+	ItemService itemService;
 
 	@GetMapping("")
 	public List<GuildData> getAllGuilds() {
@@ -75,6 +81,7 @@ public class GuildController {
 	}
 
 	@PostMapping("/{guildId}/depots")
+	@ResponseStatus(code = HttpStatus.CREATED)
 	public DepotData insertDepot(@PathVariable Long guildId, @RequestBody DepotData depotData) {
 		log.info("Create depot {} for guild with ID={}", depotData, guildId);
 		return guildService.saveDepot(depotData, guildId);
@@ -108,4 +115,12 @@ public class GuildController {
 		return Map.of("message",
 				"Depot with ID=" + depotId + " has been successfully deleted from guild with ID=" + guildId);
 	}
+	
+	@PostMapping("/{guildId}/depots/{depotId}/items")
+	@ResponseStatus(code = HttpStatus.CREATED)
+	public ItemData insertItem(@PathVariable Long guildId, @PathVariable Long depotId, @RequestBody ItemData itemData) {
+		log.info("Creating item {} for depot with ID={} from guild with ID={}", itemData, depotId, guildId);
+		return itemService.saveItem(itemData, depotId, guildId);
+	}
 }
+*/

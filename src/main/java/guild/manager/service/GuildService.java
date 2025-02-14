@@ -1,6 +1,5 @@
 package guild.manager.service;
 
-import java.util.LinkedList;
 import java.util.List;
 import java.util.NoSuchElementException;
 import java.util.Objects;
@@ -27,13 +26,6 @@ public class GuildService {
 
 	@Transactional(readOnly = true)
 	public List<GuildData> returnAllGuilds() {
-		List<Guild> guilds = guildDao.findAll();
-		List<GuildData> result = new LinkedList<>();
-
-		for (Guild guild : guilds) {
-			result.add(new GuildData(guild));
-			result.get(result.size() - 1).setDepots(null);
-		}
 		return guildDao.findAll().stream().map(GuildData::new).toList();
 	}
 
@@ -66,19 +58,13 @@ public class GuildService {
 		return guild;
 	}
 
-	private Guild findGuildById(Long guildId) {
+	protected Guild findGuildById(Long guildId) {
 		return guildDao.findById(guildId) //
 				.orElseThrow(() -> new NoSuchElementException("Guild with ID=" + guildId + " was not found"));
 	}
 
 	@Transactional(readOnly = true)
 	public List<DepotData> returnDepots(Long guildId) {
-		List<Depot> depots = depotDao.findAll();
-		List<DepotData> result = new LinkedList<>();
-
-		for (Depot depot : depots) {
-			result.add(new DepotData(depot));
-		}
 		return depotDao.findAll().stream().map(DepotData::new).toList();
 	}
 
@@ -122,7 +108,7 @@ public class GuildService {
 		return depot;
 	}
 
-	private Depot findDepotById(Long depotId, Long guildId) {
+	protected Depot findDepotById(Long depotId, Long guildId) {
 		Depot depot = depotDao.findById(depotId)
 				.orElseThrow(() -> new NoSuchElementException("Depot with ID=" + depotId + " was not found"));
 		Guild attachedGuild = depot.getGuild();

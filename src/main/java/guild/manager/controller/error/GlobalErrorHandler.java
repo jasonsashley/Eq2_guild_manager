@@ -63,6 +63,12 @@ public class GlobalErrorHandler {
 	public ExceptionMessage handleIllegalStateException(IllegalStateException ex, WebRequest webRequest) {
 		return buildExceptionMessage(ex, HttpStatus.FORBIDDEN, webRequest, LogStatus.MESSAGE_ONLY);
 	}
+	
+	@ExceptionHandler(IllegalArgumentException.class)
+	@ResponseStatus(code = HttpStatus.FORBIDDEN)
+	public ExceptionMessage handleIllegalArgumentException(IllegalArgumentException ex, WebRequest webRequest) {
+		return buildExceptionMessage(ex, HttpStatus.FORBIDDEN, webRequest, LogStatus.MESSAGE_ONLY);
+	}
 
 	@ExceptionHandler(Exception.class)
 	@ResponseStatus(code = HttpStatus.INTERNAL_SERVER_ERROR)
