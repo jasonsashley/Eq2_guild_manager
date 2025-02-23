@@ -33,7 +33,7 @@ public class Depot {
 
 	@EqualsAndHashCode.Exclude
 	@ToString.Exclude
-	@ManyToOne(cascade = CascadeType.ALL)
+	@ManyToOne(cascade = CascadeType.PERSIST)
 	@JoinColumn(name = "guild_id", nullable = false)
 	private Guild guild;
 

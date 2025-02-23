@@ -21,11 +21,12 @@ public class Source {
 	private Long sourceId;
 	
 	private String sourceName;
+	private String sourceType;
 	private String sourceWikiLink;
 	
 	@EqualsAndHashCode.Exclude
 	@ToString.Exclude
 	@ManyToMany(mappedBy = "sources")
-	private Set<Item> items = new HashSet<>();
+	private Set<Info> infos = new HashSet<>();
 
 }

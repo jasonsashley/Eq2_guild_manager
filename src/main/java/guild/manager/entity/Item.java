@@ -27,10 +27,7 @@ public class Item {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long itemId;
 
-	private String itemName;
 	private Integer itemAmount;
-	private Integer itemLevel;
-	private String itemDescription;
 	private String itemNotes;
 	
     @UpdateTimestamp
@@ -38,7 +35,7 @@ public class Item {
 
 	@EqualsAndHashCode.Exclude
 	@ToString.Exclude
-	@ManyToOne(cascade = CascadeType.ALL)
+	@ManyToOne(cascade = CascadeType.PERSIST)
 	@JoinColumn(name = "depot_id", nullable = false)
 	private Depot depot;
 
@@ -47,17 +44,12 @@ public class Item {
 	@ManyToMany(cascade = CascadeType.PERSIST)
 	@JoinTable(name = "item_tag", joinColumns = @JoinColumn(name = "item_id"), inverseJoinColumns = @JoinColumn(name = "tag_id"))
 	private Set<Tag> tags = new HashSet<>();
-
+	
 	@EqualsAndHashCode.Exclude
 	@ToString.Exclude
-	@ManyToMany(cascade = CascadeType.PERSIST)
-	@JoinTable(name = "item_zone", joinColumns = @JoinColumn(name = "item_id"), inverseJoinColumns = @JoinColumn(name = "zone_id"))
-	private Set<Zone> zones = new HashSet<>();
+	@ManyToOne(cascade = CascadeType.PERSIST)
+	@JoinColumn(name = "item_info_id", nullable = false)
+	private Info info;
 
-	@EqualsAndHashCode.Exclude
-	@ToString.Exclude
-	@ManyToMany(cascade = CascadeType.PERSIST)
-	@JoinTable(name = "item_source", joinColumns = @JoinColumn(name = "item_id"), inverseJoinColumns = @JoinColumn(name = "source_id"))
-	private Set<Source> sources = new HashSet<>();
 
 }

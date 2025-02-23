@@ -11,19 +11,15 @@ import lombok.NoArgsConstructor;
 public class ItemResponse {
 	
 	private Long itemId;
-	private String itemName;
 	private Integer itemAmount;
-	private Integer itemLevel;
-	private String itemDescription;
 	private String itemNotes;
 	private LocalDateTime lastUpdated;
+	private InfoResponse info;
 
 	public ItemResponse(Item item) {
+		info = new InfoResponse(item.getInfo());
 		itemId = item.getItemId();
-		itemName = item.getItemName();
 		itemAmount = item.getItemAmount();
-		itemLevel = item.getItemLevel();
-		itemDescription = item.getItemDescription();
 		itemNotes = item.getItemNotes();
 		lastUpdated = item.getLastUpdated();
 	}

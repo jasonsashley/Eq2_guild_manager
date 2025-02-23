@@ -21,9 +21,8 @@ public class Zone {
 	private Long zoneId;
 	
 	private String zoneName;
-	private Integer zoneLevelLower;
-	private Integer zoneLevelUpper;
-	private Integer tier;
+	private Integer[] zoneLevelRange;
+	private Integer[] tiers;
 	private Boolean worldBellAccess;
 	private Boolean ulteranSpireAccess;
 	private Boolean druidRingAccess;
@@ -32,6 +31,6 @@ public class Zone {
 	@EqualsAndHashCode.Exclude
 	@ToString.Exclude
 	@ManyToMany(mappedBy = "zones")
-	private Set<Item> items = new HashSet<>();
+	private Set<Info> infos = new HashSet<>();
 	
 }
