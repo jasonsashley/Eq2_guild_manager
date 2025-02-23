@@ -242,8 +242,6 @@ public class ApiController {
 		response.add(linkTo(methodOn(ApiController.class).getDepotById(response.getDepotId())).withRel("parent"));
 		response.add(linkTo(methodOn(ApiController.class).getItemById(id)).withRel("update"));
 		response.add(linkTo(methodOn(ApiController.class).getItemById(id)).withRel("delete"));
-		response.add(linkTo(methodOn(ApiController.class).getItemById(id)).slash("tags").withRel("get-tags"));
-		response.add(linkTo(methodOn(ApiController.class).getItemById(id)).slash("tags").withRel("new-tag"));
 		response.add(linkTo(methodOn(ApiController.class).getInfoById(infoId)).withRel("get-info"));
 		response.add(linkTo(methodOn(ApiController.class).getInfoById(infoId)).slash("sources").withRel("get-sources"));
 		response.add(linkTo(methodOn(ApiController.class).getInfoById(infoId)).slash("zones").withRel("get-zones"));
